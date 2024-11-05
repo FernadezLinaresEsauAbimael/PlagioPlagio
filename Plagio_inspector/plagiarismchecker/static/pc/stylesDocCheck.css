@@ -1,0 +1,227 @@
+body{
+    /* overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll; */
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(227, 242, 255);
+}
+
+.navbar-brand {
+    font-family: "Libre Baskerville", serif; 
+    font-size: 36px; 
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-nav{
+    font-size: 20px;     
+}
+
+.navbar-nav li :hover{
+    color: #860d07;    
+    border-bottom: 2px solid #430805;
+}
+
+.nav-two{
+    margin-left: 40px;
+}
+
+.content-1{
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.text-content{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.text_one{
+    position: relative;
+    top: 50px;
+}
+
+/* Inicio del estilo para la tabla */
+/* Contenedor principal */
+.document-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: 50px;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons button, 
+.header-buttons input {
+    margin-right: 10px;
+}
+
+.add-btn, .delete-btn, .filter-btn, .analyze-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #28a745;
+}
+
+.delete-btn, .action-btn.delete {
+    background-color: #dc3545;
+}
+
+.filter-btn {
+    background-color: #ff4b5c;
+}
+
+.filter-count {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Tabla */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table th, .styled-table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.styled-table thead {
+    background-color: #f3f3f3;
+    border-bottom: 2px solid #dddddd;
+}
+
+.styled-table th {
+    font-weight: bold;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos de los botones de acción */
+.action-btn {
+    border: none;
+    background-color: #555;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.action-btn.globe {
+    background-color: #007bff;
+}
+
+.action-btn.folder {
+    background-color: #6c757d;
+}
+
+.action-btn.delete {
+    background-color: #dc3545;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Final del codigo */ 
+
+.tab-content-2{
+    height: 450px;
+    border: 2px solid rgb(131, 130, 130);
+    border-radius: 4px;
+    padding: 3px;
+    margin: auto;
+    background-color: white;
+}
+
+form{
+    padding-top: 20px;
+}
+
+textarea{
+    width: 90%;
+    height: 170px;
+}
+
+#fileupload {
+    margin-bottom: 10px;
+}
+
+#submit-button-2{
+    margin-left: 400px;
+    background-color:#860d07; 
+    color: white;   
+    border-radius: 2rem;
+}
+
+#output {
+    margin-bottom: 200px;
+    height: 100px;
+}
+
+#file-input-dc-2 {
+    color: black;
+}
+
+.button-align{
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.output-per{
+    font-size: 35px;
+    color: #264653;
+    padding-top: 43px;
+    width: 155px;
+    height: 155px;
+    border: 7px solid #264653;
+    border-radius: 50%;
+    text-align: center;
+}

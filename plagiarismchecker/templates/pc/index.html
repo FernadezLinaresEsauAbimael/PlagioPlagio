@@ -24,11 +24,7 @@
   <link href="{% static 'pc/styles.css' %}" rel="stylesheet" type="text/css">
   <style>
     body {
-<<<<<<< HEAD
-      background-color: rgb(227, 242, 255);
-=======
       background-color: rgb(244, 246, 248);
->>>>>>> Abimael
     }
   </style>
 
@@ -93,38 +89,17 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="text-input-ws" role="tabpanel" aria-labelledby="text-tab">
-<<<<<<< HEAD
-
-            <form id="form1-ws" action="/test/" method="POST">
-              {% csrf_token %}
-              <textarea id="text-1" name="q" required></textarea>
-            </form>
-
-          </div>
-
-          <div class="tab-pane fade" id="file-input-ws" role="tabpanel" aria-labelledby="file-tab">
-            <form id="form2-ws" action="/filetest/" enctype="multipart/form-data" method="POST">
-              {% csrf_token %}
-              <input id="id_docfile" required type="file" name="docfile" />
-            </form>
-=======
             <form id="form1-ws" action="/test/" method="POST">
               {% csrf_token %}
               <textarea id="text-1" name="q" required>{{ text }}</textarea>
             </form>
           </div>
->>>>>>> Abimael
 
         </div>
       </div>
       <div class="col-md-9">
         <button type="submit" form="form1-ws" id="submit-button-1" class="btn">Ejecutar busqueda</button>
-<<<<<<< HEAD
-        <button type="submit" form="form2-ws" id="submit-button-2" class="btn submit-button-2">Ejecutar
-          busqueda</button>
-=======
         <button type="submit" form="form2-ws" id="submit-button-2" class="btn">Ejecutar busqueda</button>
->>>>>>> Abimael
       </div>
     </div>
 
@@ -137,13 +112,6 @@
             <li>{{ links }}</li>
             {% endfor %}
         </div>
-<<<<<<< HEAD
-
-        <div class="col-md-6 result-2" style="text-align: center; align-items: center;">
-          <p class="output-per-tot">{{ percent }}%</p>
-          <p>Porcentaje de Plagiado</p>
-        </div>
-=======
 
         <div class="col-md-6 result-2" style="text-align: center; align-items: center;">
           <p class="output-per-tot">{{ percent }}%</p>
@@ -152,7 +120,6 @@
           </div>
         </div>
 
->>>>>>> Abimael
       </div>
     </div>
 

@@ -5,7 +5,7 @@ from djongo import models
 class Archivo(models.Model):
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)  # Relación con el usuario
     NOMBRE = models.CharField(max_length=255)  # Nombre del archivo
-    archivo = models.FileField(upload_to='archivos/')  # Ruta de subida
+    archivo = models.FileField(max_length=255, upload_to='archivos/')  # Ruta de subida
     FECHA_SUBIDA = models.DateTimeField(auto_now_add=True)  # Fecha de subida
     plagio_percentage = models.FloatField(default=0.0)  # Porcentaje de plagio (opcional)
 

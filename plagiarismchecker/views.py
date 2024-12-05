@@ -27,7 +27,7 @@ from .models import Archivo
 
 
 # Conexión a MongoDB 
-client = MongoClient('mongodb://localhost:27017/') 
+client = MongoClient('mongodb+srv://Abimael:rkLggcGJ5aFjyxX@cluster0.vrdld.mongodb.net/plagioInspector?retryWrites=true&w=majority') 
 db = client['plagioInspector'] 
 collection = db['archivos']
 

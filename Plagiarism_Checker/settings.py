@@ -94,19 +94,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Plagiarism_Checker.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-# Ruta para almacenar archivos subidos 
-
-
 
 DATABASES = {
     'default': {

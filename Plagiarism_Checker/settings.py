@@ -49,7 +49,7 @@ DEBUG = True
 
 #ALLOWED_HOSTS = ["127.0.0.1:8000"]
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', "*"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', "plagioplagio-925018936781.us-central1.run.app"]
 
 # Application definition
 
@@ -102,15 +102,28 @@ DATABASES = {
         'ENFORCE_SCHEMA': False,  # MongoDB es esquemático flexible
         'CLIENT': {
             'host': 'mongodb+srv://Abimael:rkLggcGJ5aFjyxX@cluster0.vrdld.mongodb.net/plagioInspector?retryWrites=true&w=majority',  # Cambia según tu configuración
-            'username': 'Abimael', 
-            'password': 'rkLggcGJ5aFjyxX',
             'authMechanism': 'SCRAM-SHA-1',
         }
     }
 }
 
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+SESSION_CACHE_ALIAS = 'default'
 
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
 
 
 # Password validation

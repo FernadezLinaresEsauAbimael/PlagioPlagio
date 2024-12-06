@@ -111,11 +111,11 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'plagioInspector'),
-        'USER': os.getenv('DB_USER', 'Abimael'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'abimael123'),
+        'NAME': 'plagioInspector',
+        'USER': 'Abimael',
+        'PASSWORD': 'abimael123',
         'HOST': '/cloudsql/plagio-inspector:us-central1:plagio',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 

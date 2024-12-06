@@ -49,7 +49,7 @@ DEBUG = True
 
 #ALLOWED_HOSTS = ["127.0.0.1:8000"]
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', "plagioplagio-925018936781.us-central1.run.app"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'plagioplagio-925018936781.us-central1.run.app']
 
 # Application definition
 
@@ -94,7 +94,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Plagiarism_Checker.wsgi.application'
 
 
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -105,9 +105,9 @@ DATABASES = {
         }
     }
 }
-
-
 """
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -118,7 +118,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-"""
+
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 SESSION_CACHE_ALIAS = 'default'

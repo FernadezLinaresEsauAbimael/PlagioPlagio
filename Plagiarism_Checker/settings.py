@@ -119,7 +119,7 @@ DATABASES = {
         'USER': os.getenv('DB_USER', 'Abimael'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'abimael123'),
         'HOST': '/cloudsql/plagio-inspector:us-central1:plagio',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 

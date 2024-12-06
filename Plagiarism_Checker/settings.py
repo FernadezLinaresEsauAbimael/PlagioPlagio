@@ -94,7 +94,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Plagiarism_Checker.wsgi.application'
 
 
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -110,8 +110,9 @@ DATABASES = {
         }
     }
 }
-"""
 
+
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -122,10 +123,10 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+"""
 
-
-#SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-#SESSION_CACHE_ALIAS = 'default'
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+SESSION_CACHE_ALIAS = 'default'
 
 
 LOGGING = {

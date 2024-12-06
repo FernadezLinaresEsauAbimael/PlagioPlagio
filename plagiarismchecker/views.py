@@ -27,9 +27,9 @@ from .models import Archivo
 
 
 # Conexión a MongoDB 
-client = MongoClient('mongodb+srv://Abimael:rkLggcGJ5aFjyxX@cluster0.vrdld.mongodb.net/plagioInspector?retryWrites=true&w=majority') 
-db = client['plagioInspector'] 
-collection = db['archivos']
+#client = MongoClient('mongodb+srv://Abimael:rkLggcGJ5aFjyxX@cluster0.vrdld.mongodb.net/plagioInspector?retryWrites=true&w=majority') 
+#db = client['plagioInspector'] 
+#collection = db['archivos']
 
 
 # Vista de login

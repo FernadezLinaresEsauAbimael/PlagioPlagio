@@ -94,7 +94,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Plagiarism_Checker.wsgi.application'
 
 
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -110,9 +110,22 @@ DATABASES = {
         }
     }
 }
+"""
 
-SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-SESSION_CACHE_ALIAS = 'default'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME', 'plagioInspector'),
+        'USER': os.getenv('DB_USER', 'Abimael'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'abimael123'),
+        'HOST': '/cloudsql/plagio-inspector:us-central1:plagio',
+        'PORT': '',
+    }
+}
+
+
+#SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+#SESSION_CACHE_ALIAS = 'default'
 
 
 LOGGING = {

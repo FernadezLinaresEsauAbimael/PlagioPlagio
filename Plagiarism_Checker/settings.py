@@ -102,11 +102,6 @@ DATABASES = {
         'ENFORCE_SCHEMA': False,  # MongoDB es esquemático flexible
         'CLIENT': {
             'host': 'mongodb+srv://Abimael:rkLggcGJ5aFjyxX@cluster0.vrdld.mongodb.net/plagioInspector?retryWrites=true&w=majority',  # Cambia según tu configuración
-            'username': 'Abimael',
-            'password': 'rkLggcGJ5aFjyxX',
-            'authMechanism': 'SCRAM-SHA-1',
-            'connectTimeoutMS': 30000,  # 30 segundos
-            'socketTimeoutMS': None,  # Sin límite
         }
     }
 }
